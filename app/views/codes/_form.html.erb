@@ -11,23 +11,31 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :code %><br />
+  <div class="control-group">
+    <%= f.label :code %>
+    <div class="controls">
     <%= f.text_field :code %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :password %><br />
+  <div class="control-group">
+    <%= f.label :password %>
+    <div class="controls">
     <%= f.text_field :password %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :username %><br />
+  <div class="control-group">
+    <%= f.label :username %>
+    <div class="controls">
     <%= f.text_field :username %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :is_deleted %><br />
+  <div class="control-group">
+    <%= f.label :is_deleted %>
+    <div class="controls">
     <%= f.check_box :is_deleted %>
+    </div>
   </div>
-  <div class="actions">
+  <div class="form-actions">
     <%= f.submit %>
   </div>
 <% end %>
