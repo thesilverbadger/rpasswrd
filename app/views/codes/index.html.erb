@@ -17,9 +17,11 @@
     <td><%= code.password %></td>
     <td><%= code.username %></td>
     <td><%= code.is_deleted %></td>
-    <td><%= link_to 'Show', code %>|
-    <%= link_to 'Edit', edit_code_path(code) %>                |
-    <%= link_to 'Destroy', code, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>
+      <%= link_to 'Show', code, :class => 'btn' %>
+      <%= link_to 'Edit', edit_code_path(code), :class=>'btn' %>
+      <%= link_to 'Destroy', code, method: :delete, data: { confirm: 'Are you sure?' }, :class=>'btn btn-danger' %>
+    </td>
   </tr>
 <% end %>
           </tbody>
@@ -27,4 +29,4 @@
 
 <br />
 
-<%= link_to 'New Code', new_code_path %>
+<%= link_to 'New Code', new_code_path, :class=> 'btn' %>
