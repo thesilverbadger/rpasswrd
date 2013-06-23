@@ -4,9 +4,6 @@
   <thead>
   <tr>
     <th>Code</th>
-    <th>Password</th>
-    <th>Username</th>
-    <th>Is deleted</th>
     <th></th>
   </tr>
   </thead>
@@ -14,9 +11,6 @@
 <% @codes.each do |code| %>
   <tr>
     <td><%= code.code %></td>
-    <td><%= code.password %></td>
-    <td><%= code.username %></td>
-    <td><%= code.is_deleted %></td>
     <td>
       <%= link_to 'Show', code, :class => 'btn' %>
       <%= link_to 'Edit', edit_code_path(code), :class=>'btn' %>

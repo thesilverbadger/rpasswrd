@@ -1,25 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Code:</b>
-  <%= @code.code %>
-</p>
 
-<p>
-  <b>Password:</b>
-  <%= @code.password %>
-</p>
+<div class="control-group">
+    <b>Code:</b>
+  <div class='controls'>
+    <%= @code.code %>
+  </div>
+</div>
 
-<p>
+
+<div class="control-group">
   <b>Username:</b>
-  <%= @code.username %>
-</p>
+  <div class='controls'>
+    <%= @code.username %>
+  </div>
+</div>
 
-<p>
-  <b>Is deleted:</b>
-  <%= @code.is_deleted %>
-</p>
+<div class="control-group">
+  <b>Password:</b>
+  <div class='controls'>
+    <%= @code.password%>
+  </div>
+</div>
 
-
-<%= link_to 'Edit', edit_code_path(@code) %> |
-<%= link_to 'Back', codes_path %>
+<div class='form-actions'>
+    <%= link_to 'Edit', edit_code_path(@code), :class => 'btn' %>
+    <%= link_to 'Back', codes_path, :class => 'btn' %>
+</div>
