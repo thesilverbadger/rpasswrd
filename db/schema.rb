@@ -11,15 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130619190639) do
+ActiveRecord::Schema.define(:version => 20130623203934) do
 
   create_table "codes", :force => true do |t|
     t.string   "code"
-    t.string   "password"
     t.string   "username"
     t.boolean  "is_deleted"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "encrypted_password"
   end
 
 end
