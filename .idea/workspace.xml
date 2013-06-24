@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44e9dfed-730e-4982-875d-626619d823ab" name="Default" comment="" />
+    <list default="true" id="44e9dfed-730e-4982-875d-626619d823ab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/rpasswrd.iml" afterPath="$PROJECT_DIR$/.idea/rpasswrd.iml" />
+    </list>
     <ignored path="rpasswrd.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/routes.rb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372078737600" ignored="false" />
     <file path="/database.yml" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372101738752" ignored="false" />
     <file path="/Gemfile" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1371796587079" ignored="false" />
-    <file path="/Dummy.txt" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372102317300" ignored="false" />
+    <file path="/Dummy.txt" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372105591643" ignored="false" />
     <file path="/index.html.erb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372077628609" ignored="false" />
     <file path="/application.html.erb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372078827874" ignored="false" />
     <file path="/_form.html.erb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372020523248" ignored="false" />
@@ -368,11 +370,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Rails.Development: rpasswrd">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -692,7 +694,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2626559" sideWeight="0.6710354" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26705796" sideWeight="0.6710354" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -770,65 +772,47 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="49" selection-start="522" selection-end="522" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
+        <state line="19" column="49" selection-start="522" selection-end="522" vertical-scroll-proportion="-11.875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="37" selection-end="37" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
+        <state line="2" column="20" selection-start="37" selection-end="37" vertical-scroll-proportion="-1.25" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130624121901_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130624123234_code.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="34" selection-start="140" selection-end="140" vertical-scroll-proportion="0.12693936">
-          <folding />
-        </state>
+        <state line="6" column="34" selection-start="140" selection-end="140" vertical-scroll-proportion="0.12693936" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130623203934_add_encrypted_password_to_code.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/code.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="182" selection-end="182" vertical-scroll-proportion="0.06346968">
-          <folding />
-        </state>
+        <state line="3" column="16" selection-start="182" selection-end="182" vertical-scroll-proportion="0.06346968" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/codes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="47" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="47" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="143" selection-end="156" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="17" selection-start="143" selection-end="156" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="181" selection-end="181" vertical-scroll-proportion="0.084626235">
-          <folding />
-        </state>
+        <state line="4" column="17" selection-start="181" selection-end="181" vertical-scroll-proportion="0.084626235" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -840,16 +824,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="22" selection-start="579" selection-end="589" vertical-scroll-proportion="0.48660085">
-          <folding />
-        </state>
+        <state line="23" column="22" selection-start="579" selection-end="589" vertical-scroll-proportion="0.48660085" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/codes/index.html.erb">
