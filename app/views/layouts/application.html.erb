@@ -11,10 +11,11 @@
 
   <%if @current_user%>
     <p>
+      <a href='/logout'>Logout</a>
     </p>
   <%else%>
     <p>
-      <%= link_to new_sessions_url %>
+      <a href='/signup'>Signup</a>
     </p>
   <%end%>
 
