@@ -9,6 +9,15 @@
 <body>
 <div class='container-fluid'>
 
+  <%if @current_user%>
+    <p>
+    </p>
+  <%else%>
+    <p>
+      <%= link_to new_sessions_url %>
+    </p>
+  <%end%>
+
 <%= yield %>
 </div>
 </body>
