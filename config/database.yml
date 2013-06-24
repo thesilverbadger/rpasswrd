@@ -29,6 +29,6 @@ production:
   encoding: unicode
   database: rpasswrd
   pool: 5
-  username: dev
-  password: zaqxsw1981
+  username: rpasswrd
+  password: tr5nab2U
   host: 127.0.0.1
