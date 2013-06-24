@@ -1,5 +1,7 @@
 Rpasswrd::Application.routes.draw do
   resources :codes
+  resource :sessions
+  resource :users
 
 
   # The priority is based upon order of creation:

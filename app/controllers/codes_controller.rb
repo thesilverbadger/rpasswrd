@@ -2,7 +2,8 @@ class CodesController < ApplicationController
   # GET /codes
   # GET /codes.json
   def index
-    @codes = Code.all
+    @user_id = session[:user_id]
+    @codes = Code.where('user_id = ?', @user_id) #.find_by_user_id(@user_id)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +14,7 @@ class CodesController < ApplicationController
   # GET /codes/1
   # GET /codes/1.json
   def show
-    @code = Code.find(params[:id])
+    @code = Code.find_by_id_and_user_id(params[:id], session[:user_id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -41,6 +42,7 @@ class CodesController < ApplicationController
   # POST /codes.json
   def create
     @code = Code.new(params[:code])
+    @code.user_id = session[:user_id];
 
     respond_to do |format|
       if @code.save
@@ -56,7 +58,7 @@ class CodesController < ApplicationController
   # PUT /codes/1
   # PUT /codes/1.json
   def update
-    @code = Code.find(params[:id])
+    @code = Code.find_by_id_and_user_id(params[:id], session[:user_id])
 
     respond_to do |format|
       if @code.update_attributes(params[:code])
