@@ -4,7 +4,8 @@ server "82.196.13.127", :web, :app, :db, primary: true
 
 set :application, "rpasswrd"
 set :user, "rails"
-set :deploy_to, "/home/#{user}/#{application}"
+#set :deploy_to, "/home/#{user}/#{application}"
+set :deploy_to, "/home/#{user}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
