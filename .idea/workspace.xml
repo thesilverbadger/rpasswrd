@@ -26,7 +26,7 @@
     <file path="/unicorn.rb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1373909423909" ignored="false" />
     <file path="/unicorn_init.sh" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372956405273" ignored="false" />
     <file path="/nginx.conf" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372956427942" ignored="false" />
-    <file path="/deploy.rb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1373921120425" ignored="false" />
+    <file path="/deploy.rb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1373956981420" ignored="false" />
     <file path="/.rvmrc" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1373389354280" ignored="false" />
     <file path="/Capfile" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1373909481330" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -105,7 +105,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="30" selection-start="212" selection-end="212" vertical-scroll-proportion="0.1446281">
+            <state line="7" column="34" selection-start="217" selection-end="217" vertical-scroll-proportion="0.1446281">
               <folding />
             </state>
           </provider>
@@ -760,7 +760,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="212" selection-end="212" vertical-scroll-proportion="0.1446281">
+        <state line="7" column="34" selection-start="217" selection-end="217" vertical-scroll-proportion="0.1446281">
           <folding />
         </state>
       </provider>
