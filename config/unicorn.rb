@@ -1,11 +1,15 @@
-worker_processes 2
-timeout 30
-listen "/tmp/unicorn.blog.sock"
+# Minimal sample configuration file for Unicorn (not Rack) when used
+# with daemonization (unicorn -D) started in your working directory.
+#
+# See http://unicorn.bogomips.org/Unicorn/Configurator.html for complete
+# documentation.
+# See also http://unicorn.bogomips.org/examples/unicorn.conf.rb for
+# a more verbose configuration using more features.
 
-root = "/home/rails/rpasswrd/current"
+app_path = "/home/tom/www/apps/rpasswrd/current"
 
-working_directory root
-
-pid "#{root}/tmp/pids/unicorn.pid"
-stderr_path "#{root}/log/unicorn.log"
-stdout_path "#{root}/log/unicorn.log"
+listen 8088 # by default Unicorn listens on port 8080
+worker_processes 2 # this should be >= nr_cpus
+pid "#{app_path}/tmp/pids/unicorn.pid"
+stderr_path "#{app_path}/log/unicorn.log"
+stdout_path "#{app_path}/log/unicorn.log"

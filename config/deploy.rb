@@ -1,11 +1,11 @@
 require "bundler/capistrano"
 
-server "82.196.13.127", :web, :app, :db, primary: true
+server "192.168.10.7", :web, :app, :db, primary: true
 
 set :application, "rpasswrd"
-set :user, "deploy"
+set :user, "tom"
 #set :deploy_to, "/home/#{user}/#{application}"
-set :deploy_to, "/home/#{user}/www/#{application}"
+set :deploy_to, "/home/#{user}/www/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
