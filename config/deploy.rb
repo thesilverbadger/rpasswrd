@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "192.168.10.7", :web, :app, :db, primary: true
+server "192.168.10.79", :web, :app, :db, primary: true
 
 set :application, "rpasswrd"
 set :user, "tom"
@@ -11,7 +11,7 @@ set :use_sudo, false
 
 set :scm, "git"
 set :repository, "git@bitbucket.org:TheSilverBadger/rpasswrd.git"
-set :branch, "cap"
+set :branch, "master"
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
