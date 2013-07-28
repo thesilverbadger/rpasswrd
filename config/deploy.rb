@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "192.168.10.79", :web, :app, :db, primary: true
+server "192.168.10.9", :web, :app, :db, primary: true
 
 set :application, "rpasswrd"
 set :user, "tom"
