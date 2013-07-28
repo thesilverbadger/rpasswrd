@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44e9dfed-730e-4982-875d-626619d823ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="44e9dfed-730e-4982-875d-626619d823ab" name="Default" comment="" />
     <ignored path="rpasswrd.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/routes.rb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372164905619" ignored="false" />
     <file path="/database.yml" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1374182894617" ignored="false" />
     <file path="/Gemfile" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1373388202671" ignored="false" />
-    <file path="/Dummy.txt" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1375033432444" ignored="false" />
+    <file path="/Dummy.txt" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1375034834891" ignored="false" />
     <file path="/index.html.erb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372077628609" ignored="false" />
     <file path="/application.html.erb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372251299543" ignored="false" />
     <file path="/_form.html.erb" changelist="44e9dfed-730e-4982-875d-626619d823ab" time="1372251325305" ignored="false" />
@@ -133,6 +130,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,20 +245,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: rpasswrd">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -574,13 +571,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="22" width="1407" height="874" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26671565" sideWeight="0.67137355" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27112418" sideWeight="0.67137355" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292517" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -716,23 +713,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/codes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="40" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Capfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="4" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="47" selection-start="889" selection-end="889" vertical-scroll-proportion="0.5992011">
-          <folding />
-        </state>
+        <state line="30" column="47" selection-start="889" selection-end="889" vertical-scroll-proportion="0.5992011" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css">
