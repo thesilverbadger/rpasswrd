@@ -5,7 +5,7 @@ server "192.168.10.7", :web, :app, :db, primary: true
 set :application, "rpasswrd"
 set :user, "tom"
 #set :deploy_to, "/home/#{user}/#{application}"
-set :deploy_to, "/home/#{user}/www/apps/#{application}"
+set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 

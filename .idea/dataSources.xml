@@ -20,8 +20,8 @@
       <identifier-quote-string>&quot;</identifier-quote-string>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/rpasswrd</jdbc-url>
-      <user-name>dev</user-name>
-      <user-password>dfd0dfcbdfdbdfd2dfd9dfdddf9bdf93df92df9b</user-password>
+      <user-name>rpasswrd</user-name>
+      <user-password>dfdedfd8df9fdfc4dfcbdfc8df98dfff</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>

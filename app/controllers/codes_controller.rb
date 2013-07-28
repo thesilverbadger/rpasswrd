@@ -3,7 +3,7 @@ class CodesController < ApplicationController
   # GET /codes.json
   def index
     @user_id = session[:user_id]
-    @codes = Code.where('user_id = ?', @user_id) #.find_by_user_id(@user_id)
+    @codes = Code.where('user_id = ? and is_deleted = ?', @user_id, false) #.find_by_user_id(@user_id)
 
     respond_to do |format|
       format.html # index.html.erb

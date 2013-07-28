@@ -56,6 +56,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.2, RVM: ruby-2.0.0-p247 [rpassword]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v3.2.13, RVM: ruby-2.0.0-p247 [rpassword]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.2.13, RVM: ruby-2.0.0-p247 [rpassword]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="raindrops (v0.11.0, RVM: ruby-2.0.0-p247 [rpassword]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.0.4, RVM: ruby-2.0.0-p247 [rpassword]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, RVM: ruby-2.0.0-p247 [rpassword]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.9, RVM: ruby-2.0.0-p247 [rpassword]) [gem]" level="application" />
