@@ -46,7 +46,7 @@ class CodesController < ApplicationController
 
     respond_to do |format|
       if @code.save
-        format.html { redirect_to @code, notice: 'Code was successfully created.' }
+        format.html { redirect_to codes_path, notice: 'Code was successfully created.' }
         format.json { render json: @code, status: :created, location: @code }
       else
         format.html { render action: "new" }
@@ -62,7 +62,7 @@ class CodesController < ApplicationController
 
     respond_to do |format|
       if @code.update_attributes(params[:code])
-        format.html { redirect_to @code, notice: 'Code was successfully updated.' }
+        format.html { redirect_to codes_url, notice: 'Code was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -78,7 +78,7 @@ class CodesController < ApplicationController
     @code.destroy
 
     respond_to do |format|
-      format.html { redirect_to codes_url }
+      format.html { redirect_to codes_url, notice: 'Code deleted' }
       format.json { head :no_content }
     end
   end
