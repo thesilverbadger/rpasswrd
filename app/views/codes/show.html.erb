@@ -1,29 +1,40 @@
-<p id="notice"><%= notice %></p>
 
+<% if notice %>
+    <div class="alert alert-success">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Saved!</h4>
+      <p><%=notice%></p>
+    </div>
+<%end%>
 
-<div class="control-group">
-    <b>Code:</b>
-  <div class='controls'>
+<form class='form-horizontal'>
+
+<div class="form-group">
+  <label class='col-lg-2 control-label'>Code</label>
+  <div class="col-lg-4">
     <%= @code.code %>
   </div>
 </div>
 
-
-<div class="control-group">
-  <b>Username:</b>
-  <div class='controls'>
+<div class="form-group">
+  <label class='col-lg-2 control-label'>Username</label>
+  <div class="col-lg-4">
     <%= @code.username %>
   </div>
 </div>
-
-<div class="control-group">
-  <b>Password:</b>
-  <div class='controls'>
-    <%= @code.password%>
+<div class="form-group">
+  <label class='col-lg-2 control-label'>Password</label>
+  <div class="col-lg-4">
+    <%= @code.password %>
   </div>
 </div>
 
-<div class='form-actions'>
-    <%= link_to 'Edit', edit_code_path(@code), :class => 'btn' %>
-    <%= link_to 'Back', codes_path, :class => 'btn' %>
-</div>
+
+  <div class="form-group">
+    <div class='col-lg-2'></div>
+    <div class="col-lg-4">
+    <%= link_to 'Edit', edit_code_path(@code) %>
+    <%= link_to 'Back', codes_path %>
+    </div>
+  </div>
+</form>
