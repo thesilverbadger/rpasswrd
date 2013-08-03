@@ -15,7 +15,8 @@
       }
   </style>
 
-
+    <script src='//cdnjs.cloudflare.com/ajax/libs/toastr.js/1.3.1/js/toastr.min.js'></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/1.3.1/css/toastr.min.css" rel='stylesheet' />
 </head>
 <body>
 
@@ -55,6 +56,18 @@
 
 
 <div class='container'>
+  <%if flash[:alert] %>
+      <script>
+          toastr.error('<%= flash[:alert] %>');
+      </script>
+  <%end%>
+
+  <%if flash[:notice] %>
+      <script>
+          toastr.success('<%= flash[:notice] %>');
+      </script>
+  <%end%>
+
 <%= yield %>
 </div>
 </body>
