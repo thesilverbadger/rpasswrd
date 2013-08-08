@@ -35,7 +35,7 @@ class CodesController < ApplicationController
 
   # GET /codes/1/edit
   def edit
-    @code = Code.find(params[:id])
+    @code = Code.find_by_id_and_user_id(params[:id], session[:user_id])
   end
 
   # POST /codes
@@ -74,12 +74,23 @@ class CodesController < ApplicationController
   # DELETE /codes/1
   # DELETE /codes/1.json
   def destroy
-    @code = Code.find(params[:id])
+    @code = Code.find_by_id_and_user_id(params[:id], session[:user_id])
     @code.destroy
 
     respond_to do |format|
       format.html { redirect_to codes_url, notice: 'Code deleted' }
       format.json { head :no_content }
+    end
+  end
+
+
+  def generate
+    random = [*('a'..'z'),*('0'..'9')].shuffle[0,12].join
+
+    @code = '{ randomCode: "' + random + '" }'
+
+    respond_to do |format|
+      format.json { render json: @code }
     end
   end
 end
