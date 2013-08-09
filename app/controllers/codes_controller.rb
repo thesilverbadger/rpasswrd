@@ -1,4 +1,6 @@
 class CodesController < ApplicationController
+  skip_before_filter :require_login, :only => :generate
+
   # GET /codes
   # GET /codes.json
   def index
@@ -42,7 +44,7 @@ class CodesController < ApplicationController
   # POST /codes.json
   def create
     @code = Code.new(params[:code])
-    @code.user_id = session[:user_id];
+    @code.user_id = session[:user_id]
 
     respond_to do |format|
       if @code.save
@@ -87,7 +89,7 @@ class CodesController < ApplicationController
   def generate
     random = [*('a'..'z'),*('0'..'9')].shuffle[0,12].join
 
-    @code = '{ randomCode: "' + random + '" }'
+    @code = '{ "randomCode" : "' + random + '" }'
 
     respond_to do |format|
       format.json { render json: @code }
