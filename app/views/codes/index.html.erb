@@ -7,15 +7,16 @@
   <tr>
     <th>Code</th>
     <th></th>
+    <th></th>
   </tr>
   </thead>
-          <tbody>
+    <tbody>
 <% @codes.each do |code| %>
   <tr>
     <td><%= code.code %></td>
     <td>
-      <%= link_to 'Show', code, :class => 'btn' %>
-      <%= link_to 'Edit', edit_code_path(code), :class=>'btn' %>
+      <%= link_to 'Show', code, :class => 'btn btn-default' %>
+      <%= link_to 'Edit', edit_code_path(code), :class=>'btn btn-default' %>
       <%= link_to 'Destroy', code, method: :delete, data: { confirm: 'Are you sure?' }, :class=>'btn btn-danger' %>
     </td>
   </tr>
@@ -24,5 +25,4 @@
 </table>
 
 <br />
-
 </fieldset>

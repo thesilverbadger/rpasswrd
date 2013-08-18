@@ -7,29 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    'application', :media => 'all' %>
   <%= javascript_include_tag 'application' %>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/navbar/navbar.css" rel="stylesheet">
+    <script src='//code.jquery.com/jquery-1.10.1.min.js'></script>
   <%= csrf_meta_tags %>
 
-  <style type="text/css">
-      body {
-          padding-top: 60px;
-      }
-  </style>
 
     <script src='//cdnjs.cloudflare.com/ajax/libs/toastr.js/1.3.1/js/toastr.min.js'></script>
     <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/1.3.1/css/toastr.min.css" rel='stylesheet' />
 </head>
 <body>
 
-<!-- Fixed navbar -->
-<div class="navbar navbar-fixed-top">
+
+<!-- Static navbar -->
+<div class="navbar">
   <div class="container">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Rpasswrd</a>
-    <div class="nav-collapse collapse">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Autoportal</a>
+    </div>
+    <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <%if @current_user%>
             <li>
@@ -46,12 +47,12 @@
               <a href='/login'>Log In</a>
             </li>
         <%end%>
-
       </ul>
-
     </div><!--/.nav-collapse -->
   </div>
 </div>
+
+
 
 
 
