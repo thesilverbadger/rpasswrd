@@ -2,26 +2,25 @@
 <fieldset>
   <legend>Listing codes</legend>
 
-<table class='table table-hover table-striped table-bordered'>
+<table class='table table-striped table-bordered'>
   <thead>
   <tr>
     <th>Code</th>
     <th></th>
-    <th></th>
   </tr>
   </thead>
     <tbody>
-<% @codes.each do |code| %>
-  <tr>
-    <td><%= code.code %></td>
-    <td>
-      <%= link_to 'Show', code, :class => 'btn btn-default' %>
-      <%= link_to 'Edit', edit_code_path(code), :class=>'btn btn-default' %>
-      <%= link_to 'Destroy', code, method: :delete, data: { confirm: 'Are you sure?' }, :class=>'btn btn-danger' %>
-    </td>
-  </tr>
-<% end %>
-          </tbody>
+        <% @codes.each do |code| %>
+            <tr>
+                <td><%= code.code %></td>
+                <td>
+                <%= link_to 'Show', code, :class => 'btn btn-default' %>
+                <%= link_to 'Edit', edit_code_path(code), :class=>'btn btn-default' %>
+                <%= link_to 'Destroy', code, method: :delete, data: { confirm: 'Are you sure?' }, :class=>'btn btn-danger' %>
+                </td>
+            </tr>
+        <% end %>
+    </tbody>
 </table>
 
 <br />
