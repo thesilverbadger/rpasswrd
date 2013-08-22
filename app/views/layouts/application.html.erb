@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    'application', :media => 'all' %>
   <%= javascript_include_tag 'application' %>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link href="http://getbootstrap.com/examples/navbar/navbar.css" rel="stylesheet">
     <script src='//code.jquery.com/jquery-1.10.1.min.js'></script>
   <%= csrf_meta_tags %>
@@ -20,40 +20,35 @@
 
 
 <!-- Static navbar -->
-<div class="navbar">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">rpassword</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <%if @current_user%>
-            <li>
-              <a href='/logout'>Log Out</a>
-            </li>
-            <li>
-              <%= link_to 'New Code', new_code_path %>
-            </li>
-        <%else%>
-            <li>
-              <a href='/signup'>Sign Up</a>
-            </li>
-            <li>
-              <a href='/login'>Log In</a>
-            </li>
-        <%end%>
-      </ul>
-    </div><!--/.nav-collapse -->
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">rpassword</a>
   </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <%if @current_user%>
+          <li>
+            <a href='/logout'>Log Out</a>
+          </li>
+          <li>
+            <%= link_to 'New Code', new_code_path %>
+          </li>
+      <%else%>
+          <li>
+            <a href='/signup'>Sign Up</a>
+          </li>
+          <li>
+            <a href='/login'>Log In</a>
+          </li>
+      <%end%>
+    </ul>
+  </div><!--/.nav-collapse -->
 </div>
-
-
-
 
 
     <div class='container'>
@@ -72,6 +67,6 @@
     <%= yield %>
     </div>
 
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
