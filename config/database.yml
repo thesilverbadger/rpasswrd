@@ -9,7 +9,7 @@ development:
   database: rpasswrd_development
   pool: 5
   username: dev
-  password: zaqxsw1981
+  password: rjhsths
   host: 127.0.0.1
 
 # Warning: The database defined as "test" will be erased and
@@ -21,7 +21,7 @@ test:
   database: rpasswrd_test
   pool: 5
   username: dev
-  password: zaqxsw1981
+  password: rjhsths
   host: 127.0.0.1
 
 production:
