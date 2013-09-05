@@ -5,7 +5,7 @@ namespace :pg do
     datestamp = Time.now.strftime("%Y-%m-%d_%H-%M-%S")
 
     #drop it in the db/backups directory temporarily
-    backup_file = "# {RAILS_ROOT}/db/backups/db_name_# {datestamp}_dump.sql.gz"
+    backup_file = "# {RAILS_ROOT}/db/backups/rpasswrd_#_{datestamp}_dump.sql.gz"
 
     #dump the backup and zip it up
     sh "pg_dump -h localhost -U tom rpasswrd | gzip -c > # {backup_file}"
