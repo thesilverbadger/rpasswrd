@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  #before_filter :require_login, :except => [:get_users, :add_code]
+  before_filter :require_login #, :except => [:get_users, :add_code]
 
   private
 
