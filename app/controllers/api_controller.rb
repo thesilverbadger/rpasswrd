@@ -17,7 +17,7 @@ class ApiController < ApplicationController
       code.user_id = user.id
       code.password = params[:password]
       code.username = params[:username]
-      code.code = code_name
+      code.code = params[:code]
       code.is_deleted = false
       code.save
     end
