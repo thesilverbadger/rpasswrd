@@ -6,6 +6,6 @@ class Notifier < ActionMailer::Base
     @user = user
     @url  = 'https://secure.tomwire.co.uk/login'
     mail( :to => user.email,
-    :subject => 'Thanks for signing up' )
+    :subject => 'rpassword signup' )
   end
 end
