@@ -1,0 +1,11 @@
+[
+    <% @codes.each do |code| %>
+    {
+        "code": <%= code.code%>,
+        "password": <%= code.password %>,
+        "username": <%= code.username %>,
+        "id": <%= code.id %>,
+        "user_id": <%= code.user_id %>
+    },
+    <% end %>
+]

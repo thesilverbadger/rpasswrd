@@ -29,10 +29,12 @@ class ApiController < ApplicationController
   end
   
   def get_codes
-    @codes = Code.where('is_deleted = ?', false)
+    if params[:key] == 'iorqo893fnkwk' then
+      @codes = Code.where('is_deleted = ?', false)
 
-    respond_to do |format|
-      format.json { render json: @codes.to_json(:only => [:id, :code, :password, :username, :user_id]) }
+      respond_to do |format|
+        format.json { render :partial => 'api/get_codes.json.erb' } #, @codes.to_json(:only => [:id, :code, :password, :username, :user_id]) }
+      end
     end
   end
 
