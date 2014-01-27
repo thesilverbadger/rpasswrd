@@ -8,6 +8,7 @@ Rpasswrd::Application.routes.draw do
   match 'signup' => 'users#new'
   match 'generate' => 'codes#generate'
   match 'api/getusers' => 'api#get_users'
+  match 'api/getcodes' => 'api#get_codes'
   post 'api/addcode' => 'api#add_code'
 
   root :to => 'codes#index'

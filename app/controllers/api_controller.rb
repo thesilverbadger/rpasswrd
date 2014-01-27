@@ -27,5 +27,15 @@ class ApiController < ApplicationController
       format.json { render json: user }
     end
   end
+  
+  def get_codes
+    @codes = Code.where('is_deleted = ?', false)
+
+    @codes.to_json(:only => [:id, :code, :password, :username])
+
+    respond_to do |format|
+      format.json { render json: @codes.to_json(:only => [:id, :code, :password, :username, :user_id]) }
+    end
+  end
 
 end
